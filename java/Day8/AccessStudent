@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class AccessStudent 
+{
+	public static void main(String[] args) {
+		Student s1 = new Student();
+		// to set values of student
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter Roll no : ");
+		s1.setRollno(sc.nextInt());
+		
+		sc.nextLine();
+		System.out.println("Enter Name: ");
+		s1.setName(sc.nextLine());
+		
+		System.out.println("Enter Age: ");
+		s1.setAge(sc.nextInt());
+		
+		System.out.println("Enter Salary: ");
+		s1.setSalary(sc.nextFloat());
+		
+		System.out.println("Student Record: \n"+s1);
+		
+		Student s2 = new Student(100,"Ram");
+		System.out.println("Student Record : \n"+s2);;
+	}
+}
